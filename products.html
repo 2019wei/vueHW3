@@ -313,6 +313,9 @@
                     .then((res) => {
                     //console.log(res.data);
                     alert(res.data.message);
+                    this.tempProduct = {
+                            imagesUrl:[]
+                        };
                     this.getProducts();
                     delProductModal.hide();
                     }).catch((error) => {
