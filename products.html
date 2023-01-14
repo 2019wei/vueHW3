@@ -263,6 +263,9 @@
                     if(state == 'edit'){
                         this.state = state;
                         this.tempProduct = {...data};
+                        if(this.tempProduct.imagesUrl == undefined){
+                          this.tempProduct.imagesUrl = []
+                        }
                         productModal.show();
                     }
                     if(state == 'delete'){
